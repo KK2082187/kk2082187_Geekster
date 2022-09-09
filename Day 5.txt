@@ -1,0 +1,54 @@
+Q1:-import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scn = new Scanner(System.in);
+	int number = scn.nextInt();
+	if(number%2==0){
+	    if(number>1000){
+	        System.out.println("Even and above 1000");
+	    }else{
+	        System.out.println("Even");
+	    }
+	}
+	if(number%2!=0){
+	    if(number>1000){
+	        System.out.println("Odd and above 1000");
+	    }else{
+	        System.out.println("Even");
+	    }
+	}
+	}
+}
+Q2:-import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scn = new Scanner(System.in);
+	int x = scn.nextInt();
+	int y = scn.nextInt();
+	int z = scn.nextInt();
+	int num = 0;
+	if(x%3==0){
+	    if(y>=200){
+	        num = 10+z;
+	    }else if(y>=100 && y<200){
+	        num = 5+z;
+	    }else if(y>=50 && y<100){
+	        num = 4+z;
+	    }else{
+	        num = 1+z;
+	    }
+	}
+	if(x%3 != 0){
+	   if (y>=200){
+	        num = 3+z;
+	    }else if(y>=100 && y<200){
+	        num = 3+z;
+	    }else{
+	        num = 1+z;
+	    }
+	}
+	System.out.println(10+z);
+	}
+}
